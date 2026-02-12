@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vida Floral - Cochabamba</title>
 
-<!-- Font Awesome para iconos modernos -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 <style>
@@ -15,7 +15,7 @@
   .hero {
     position: relative;
     width: 100%;
-    height: 45vh; /* 45% de la altura de la pantalla */
+    height: 45vh;
     min-height: 250px;
     max-height: 450px;
     overflow: hidden;
@@ -94,7 +94,7 @@
     .card{max-width:100%;}
   }
 
-  /* Contenedor WhatsApp + sociales (misma fila) */
+  /* Contenedor redes sociales */
   .cta-social {
     display:flex;
     justify-content:center;
@@ -135,14 +135,24 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.25);
     filter: brightness(1.1);
   }
-  @media (max-width: 768px) {
+/* Grupo de redes */
+.social-group {
+  display: flex;
+  gap: 12px;
+}
+
+/* En móvil */
+@media (max-width: 768px) {
   .cta-social {
     flex-direction: column;
-    gap: 15px;
   }
 
   .btn-whatsapp {
     width: 90%;
+  }
+
+  .social-group {
+    justify-content: center;
   }
 
   .social-btn {
@@ -165,21 +175,27 @@
   <div class="hero-text">Vida Floral 💐<br>Cochabamba</div>
 </div>
 
-<!-- Botón principal + iconos sociales en misma fila -->
+<!-- Botón principal + iconos sociales -->
 <div class="cta-social">
   <a class="btn-whatsapp" href="https://wa.me/59170790057" target="_blank" rel="noopener noreferrer">
     Pedir por WhatsApp
   </a>
-  <a href="https://www.facebook.com/p/Vida-Floral-100064183086037/" target="_blank" class="social-btn facebook" title="Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://www.instagram.com/vidafloralcochabamba_/" target="_blank" class="social-btn instagram" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://maps.app.goo.gl/DUFwf6NC8P4cjSBL8" target="_blank" class="social-btn location" title="Ver ubicación en Google Maps">
-    <i class="fas fa-map-marker-alt"></i>
-  </a>
+
+  <div class="social-group">
+    <a href="https://www.facebook.com/p/Vida-Floral-100064183086037/" target="_blank" class="social-btn facebook" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/vidafloralcochabamba_/" target="_blank" class="social-btn instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://maps.app.goo.gl/DUFwf6NC8P4cjSBL8" target="_blank" class="social-btn location" title="Ver ubicación en Google Maps">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+  </div>
 </div>
+
 
 <!-- Productos generales -->
 <section>
