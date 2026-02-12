@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flores Amor - Cochabamba | San Valentín 💐</title>
+
+<!-- Font Awesome para iconos modernos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+  body {margin:0;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;background:#fff8f9;color:#444;text-align:center;}
+  
+  /* Hero / Banner */
+  .hero {padding:0;position:relative;}
+  .hero img {width:100%;max-height:300px;object-fit:cover;}
+  .hero-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:2rem;
+    font-weight:700;
+    color:white;
+    text-shadow:0 2px 8px rgba(0,0,0,0.4);
+  }
+
+  /* Botón WhatsApp */
+  .btn-whatsapp {
+    display:inline-block;
+    background-color:#25d366;
+    color:white;
+    padding:16px 28px;
+    font-size:1.2rem;
+    border-radius:10px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(37,211,102,0.5);
+    transition:background-color 0.3s ease;
+  }
+  .btn-whatsapp:hover {background-color:#1ebe57;}
+
+  /* Secciones de productos */
+  section {padding:30px 20px;max-width:1000px;margin:0 auto 40px;}
+  section h2 {font-size:1.8rem;color:#f95c7b;margin-bottom:20px;}
+  .products, .combos {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+  .card {
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    max-width:280px;
+    box-shadow:0 6px 14px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .card img {
+    width:100%;
+    border-radius:12px;
+    object-fit:cover;
+    height:250px;
+    background:#eee;
+  }
+  .card h3 {font-size:1.3rem;margin:15px 0 8px;color:#f95c7b;}
+  .card p {font-size:1rem;color:#666;margin:0 0 10px;}
+  .price {font-weight:700;font-size:1.4rem;color:#ff6f91;}
+
+  /* Footer */
+  footer {
+    background:#ffccd6;
+    padding:25px 10px;
+    font-size:0.95rem;
+    color:#6a374e;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.8);
+  }
+
+  @media (max-width:650px){
+    .products,.combos{flex-direction:column}
+    .card{max-width:100%;}
+  }
+
+  /* Contenedor WhatsApp + sociales (misma fila) */
+  .cta-social {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap: wrap;
+    margin-top:20px;
+  }
+
+  /* Botones sociales estilo burbuja con animación */
+  .social-btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    color:#fff;
+    font-size:1.5rem;
+    text-decoration:none;
+    cursor:pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  }
+  .social-btn i {font-size:1.3rem;}
+
+  .social-btn.facebook { background-color:#1877f2; }
+  .social-btn.facebook:hover { background-color:#145dbf; }
+
+  .social-btn.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  }
+
+  .social-btn.location { background-color:#e74c3c; }
+
+  .social-btn:hover {
+    transform: scale(1.25) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    filter: brightness(1.1);
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero / Banner -->
+<div class="hero">
+  <img src="img/banner.jpg" alt="Banner San Valentín" />
+  <div class="hero-text">Flores Amor 💐<br>Entregas en Cochabamba</div>
+</div>
+
+<!-- Botón principal + iconos sociales en misma fila -->
+<div class="cta-social">
+  <a class="btn-whatsapp" href="https://wa.me/59170790057" target="_blank" rel="noopener noreferrer">
+    Pedir por WhatsApp
+  </a>
+  <a href="https://www.facebook.com/p/Vida-Floral-100064183086037/" target="_blank" class="social-btn facebook" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/vidafloralcochabamba_/" target="_blank" class="social-btn instagram" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://goo.gl/maps/XXXXXXXX" target="_blank" class="social-btn location" title="Ver ubicación en Google Maps">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+</div>
+
+<!-- Productos generales -->
+<section>
+  <h2>🌸 Nuestros Ramos</h2>
+  <div class="products">
+    <div class="card">
+      <img src="img/ramo1.jpg" alt="Ramo 1" />
+      <h3>Ramo Clásico</h3>
+      <p>Hermoso ramo desde 25 Bs</p>
+      <p class="price">25 Bs</p>
+      <a class="btn-whatsapp" href="https://wa.me/59170790057?text=Hola,%20quiero%20pedir%20el%20Ramo%20Cl%C3%A1sico" target="_blank">Encargar</a>
+    </div>
+    <div class="card">
+      <img src="img/ramo2.jpg" alt="Ramo 2" />
+      <h3>Ramo Premium</h3>
+      <p>Ramo especial desde 45 Bs</p>
+      <p class="price">45 Bs</p>
+      <a class="btn-whatsapp" href="https://wa.me/59170790057?text=Hola,%20quiero%20pedir%20el%20Ramo%20Premium" target="_blank">Encargar</a>
+    </div>
+    <div class="card">
+      <img src="img/ramo3.jpg" alt="Ramo 3" />
+      <h3>Ramo Deluxe</h3>
+      <p>Ramo elegante con flores premium desde 65 Bs</p>
+      <p class="price">65 Bs</p>
+      <a class="btn-whatsapp" href="https://wa.me/59170790057?text=Hola,%20quiero%20pedir%20el%20Ramo%20Deluxe" target="_blank">Encargar</a>
+    </div>
+  </div>
+</section>
+
+<!-- Combos y especiales San Valentín -->
+<section>
+  <h2>💝 Combos y Especiales San Valentín</h2>
+  <div class="combos">
+    <div class="card">
+      <img src="img/combo1.jpg" alt="Combo Peluche y Globos" />
+      <h3>Combo Peluche & Globos</h3>
+      <p>Flores + peluche + globos desde 85 Bs</p>
+      <p class="price">85 Bs</p>
+      <a class="btn-whatsapp" href="https://wa.me/59170790057?text=Hola,%20quiero%20pedir%20el%20Combo%20Peluche%20y%20Globos" target="_blank">Encargar</a>
+    </div>
+    <div class="card">
+      <img src="img/combo2.jpg" alt="San Valentín Especial" />
+      <h3>San Valentín Especial</h3>
+      <p>Ramos + chocolates + tarjeta desde 95 Bs</p>
+      <p class="price">95 Bs</p>
+      <a class="btn-whatsapp" href="https://wa.me/59170790057?text=Hola,%20quiero%20pedir%20el%20Combo%20San%20Valent%C3%ADn" target="_blank">Encargar</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>📍 Visítanos en: Av. Example 123, Cochabamba &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://goo.gl/maps/XXXXXXXX" target="_blank" style="color:#6a374e; text-decoration:underline;">Ver en Google Maps</a></p>
+  <p>Flores Amor — Hacemos que tu regalo hable por ti 💐<br>Entregas en Cochabamba con cariño y puntualidad.</p>
+</footer>
+
+</body>
+</html>
